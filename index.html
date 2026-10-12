@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>링스온 힐스테이트 커뮤니티센터</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <!-- ===================== 1. 인트로 ===================== -->
+  <section class="screen intro" id="intro" aria-label="인트로">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true">H</div>
+      <div class="logo-name">링스온 힐스테이트</div>
+      <div class="logo-sub">커뮤니티센터</div>
+    </div>
+    <div class="intro-copy">
+      <h2>입주민 여러분<br><em>환영합니다!</em></h2>
+      <p>최고의 커뮤니티 서비스를 제공합니다.</p>
+    </div>
+    <!-- 시안 일러스트 영역 : 실제 이미지로 교체 (예: <img src="images/intro-visual.png" alt="">) -->
+    <div class="intro-visual" aria-hidden="true">
+      <div class="iv-window"></div><div class="iv-wall"></div><div class="iv-floor"></div>
+      <div class="iv-plant"></div><div class="iv-device"><span></span></div>
+    </div>
+    <div class="intro-bottom">
+      <a class="btn-enter" href="#home">
+        <span class="scan" aria-hidden="true">
+          <svg style="width:2.5rem;height:2.5rem" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M4 12V8a4 4 0 0 1 4-4h4M28 4h4a4 4 0 0 1 4 4v4M36 28v4a4 4 0 0 1-4 4h-4M12 36H8a4 4 0 0 1-4-4v-4"/><circle cx="20" cy="16" r="5" fill="#fff" stroke="none"/><path d="M11 30c1.5-5 5-7 9-7s7.5 2 9 7z" fill="#fff" stroke="none"/></svg>
+        </span>
+        <span class="bar" aria-hidden="true"></span>
+        <strong>입장하기</strong>
+        <span class="arr" aria-hidden="true"><svg style="width:1.375rem;height:1.375rem" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+      </a>
+      <p class="intro-foot">더 편리하고 안전한 커뮤니티 생활,<br>함께 만들어 갑니다.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 2. 홈 ===================== -->
+  <section class="screen home" id="home" aria-label="홈">
+    <div class="logo sm">
+      <div class="logo-mark" aria-hidden="true">H</div>
+      <div class="logo-name">링스온 힐스테이트</div>
+      <div class="logo-sub">커뮤니티센터</div>
+    </div>
+    <div class="home-body">
+      <h2 class="greet">안녕하세요.<br><em>김*리</em> 회원님</h2>
+      <div class="notice">
+        <span class="spk" aria-hidden="true"><svg style="width:1.375rem;height:1.375rem" viewBox="0 0 24 24" fill="#fff"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <ul>
+          <li>기존 회원 접수 기간 : 매월 20일 ~ 24일</li>
+          <li>신규 회원 접수 기간 : 매월 25일 ~ 30일</li>
+        </ul>
+      </div>
+
+      <!-- 타일 이미지 : 이모지는 임시. 시안 3D 아이콘 이미지로 교체 -->
+      <div class="tile-grid">
+        <a class="tile" href="#golf"><div class="tile-img" aria-hidden="true">🏌️</div><div class="tile-foot"><strong>골프 타석배정</strong><span class="chev-circle" aria-hidden="true"></span></div></a>
+        <a class="tile" href="#screen"><div class="tile-img" aria-hidden="true">⛳</div><div class="tile-foot"><strong>스크린골프</strong><span class="chev-circle" aria-hidden="true"></span></div></a>
+        <button type="button" class="tile" data-soon><div class="tile-img" aria-hidden="true">🧖</div><div class="tile-foot"><strong>사우나</strong><span class="chev-circle" aria-hidden="true"></span></div></button>
+        <a class="tile" href="#reading"><div class="tile-img" aria-hidden="true">📚</div><div class="tile-foot"><strong>독서실</strong><span class="chev-circle" aria-hidden="true"></span></div></a>
+        <button type="button" class="tile" data-soon><div class="tile-img" aria-hidden="true">🗄️</div><div class="tile-foot"><strong>사물함</strong><span class="chev-circle" aria-hidden="true"></span></div></button>
+        <a class="tile" href="#kids"><div class="tile-img" aria-hidden="true">🧸</div><div class="tile-foot"><strong>키즈카페</strong><span class="chev-circle" aria-hidden="true"></span></div></a>
+      </div>
+      <a class="tile tile-wide" href="#history/usage"><div class="tile-img" aria-hidden="true">📋</div><strong>이용내역</strong><span class="chev-circle" aria-hidden="true"></span></a>
+    </div>
+    <div class="home-actions">
+      <a class="btn-gray" href="#intro" style="display:grid;place-items:center">이전</a>
+      <button type="button" class="btn-blue" data-top>홈</button>
+    </div>
+  </section>
+
+  <!-- ===================== 3~7. 서브 화면 (JS 템플릿으로 렌더) ===================== -->
+  <section class="screen sub" id="golf" aria-label="골프 타석 배정"></section>
+  <section class="screen sub" id="screen" aria-label="스크린골프 예약"></section>
+  <section class="screen sub" id="kids" aria-label="키즈카페 예약"></section>
+  <section class="screen sub" id="reading" aria-label="독서실 일권 예약"></section>
+  <section class="screen sub" id="history" aria-label="이용내역"></section>
+</div>
+
+<!-- 전체메뉴 -->
+<div class="drawer" id="drawer" hidden>
+  <div class="dim" data-close></div>
+  <nav class="drawer-panel" aria-label="전체메뉴">
+    <div class="drawer-head"><strong>전체메뉴</strong><button type="button" class="appbar-btn" data-close aria-label="닫기">✕</button></div>
+    <a href="#home">홈</a>
+    <a href="#golf">골프 타석배정</a>
+    <a href="#screen">스크린골프 예약</a>
+    <a href="#kids">키즈카페 예약</a>
+    <a href="#reading">독서실 예약</a>
+    <a href="#history/usage">이용내역</a>
+  </nav>
+</div>
+
+<!-- 확인 모달 -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="dim" data-modal-cancel></div>
+  <div class="modal-box">
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn-gray" data-modal-cancel>취소</button>
+      <button type="button" class="btn-blue" style="background:var(--navy)" data-modal-ok>확인</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
